@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selfication</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lib/grid.css">
+    <link rel="stylesheet" href="assets/css/lib/normalize.css">
+</head>
+<body data-state="off">
+    <div id="lightbox">
+        <div id="modalContainer">
+        <div id="btnRemakeOnly" class="lightBoxOut"></div>
+            <span id="pvc">Partagez votre cliché</span>
+            <canvas id="canvas2" class="canClear" width="275" height="365"></canvas>
+            <canvas id="canvas3" class="canClear" width="275" height="365"></canvas>
+            <canvas id="canvas4" class="canClear" width="275" height="365"></canvas>
+            <canvas id="canvas5" class="canClear" width="275" height="365"></canvas>
+            <div id="btnRemake"class="clsLightBox"></div>
+            <div id="btnShare"class="clsLightBox"></div>
+        </div>  
+    </div>
+    <div id="fb-root"></div>
+    <div class="wrapper550">
+        <div class="content">
+            <div class="row clearfix">
+                <div class="column half">
+                    <div class="logo" data-state="off"></div>
+                    <div class="colLeftHome">
+                        <div class="msnCam"></div>
+                    </div>
+                    <div class="colLeftPlay">
+                        <div class="gerard"></div>
+                        <div class="showThumbnailCont">
+                            <div class="thumb showThumbnail" data-state="off"></div>
+                            <span>Changez de stars</span>
+                        </div>
+                        <div class="thumb thumbnailContainer">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/10.png" alt="Einstein" data-url="assets/img/cadre/large/10.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/9.jpg" alt="Einstein" data-url="assets/img/cadre/large/9.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/ninja.jpg" alt="Einstein" data-url="assets/img/cadre/large/ninja.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/91.jpg" alt="Einstein" data-url="assets/img/cadre/large/91.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/8.jpg" alt="Einstein" data-url="assets/img/cadre/large/8.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/1.jpg" alt="Einstein" data-url="assets/img/cadre/large/1.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/2.jpg" alt="Einstein" data-url="assets/img/cadre/large/2.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/3.jpg" alt="Einstein" data-url="assets/img/cadre/large/3.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/4.jpg" alt="Einstein" data-url="assets/img/cadre/large/4.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/5.jpg" alt="Einstein" data-url="assets/img/cadre/large/5.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/6.jpg" alt="Einstein" data-url="assets/img/cadre/large/6.png">
+                            <img class="thumb thumbnail" src="assets/img/cadre/thumbnail/7.jpg" alt="Einstein" data-url="assets/img/cadre/large/7.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="column half">
+                    <div class="colRightHome">
+                        <div class="go"></div>
+                    </div>
+                    <!-- <div id="canvas"></div> -->
+                    <div class="colRightPlay">
+                        <div class="paperBoard">
+                            <span>Choisissez votre star</span>
+                        </div>
+                        <div class="thumb thumbnailContainerBoard" data-state="off">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/10.png" alt="Einstein" data-url="assets/img/cadre/large/10.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/9.jpg" alt="Einstein" data-url="assets/img/cadre/large/9.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/ninja.jpg" alt="Einstein" data-url="assets/img/cadre/large/ninja.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/91.jpg" alt="Einstein" data-url="assets/img/cadre/large/91.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/8.jpg" alt="Einstein" data-url="assets/img/cadre/large/8.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/1.jpg" alt="Einstein" data-url="assets/img/cadre/large/1.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/2.jpg" alt="Einstein" data-url="assets/img/cadre/large/2.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/3.jpg" alt="Einstein" data-url="assets/img/cadre/large/3.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/4.jpg" alt="Einstein" data-url="assets/img/cadre/large/4.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/5.jpg" alt="Einstein" data-url="assets/img/cadre/large/5.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/6.jpg" alt="Einstein" data-url="assets/img/cadre/large/6.png">
+                            <img class="thumb thumbnailBoard" src="assets/img/cadre/thumbnail/11.jpg" alt="Einstein" data-url="assets/img/cadre/large/11.png">
+                        </div>
+                        <div id="cCamera" class="cCamera">
+                            <div id="mask"></div>
+                            <video id="video" width="275" height="365" autoplay data-state="on"></video>
+                            <img id="cadre" class="large" src="assets/img/cadre/large/3.png">
+                        </div>
+                        <div class="snap"></div>
+                        <div id="config" data-state="off"></div>
+                        <div id="colorBox" class="configBox">
+                            <label for="colorSelect">Couleur</label>
+                            <input id="colorSelect" class"csc" type="color" value=""/><br /> 
+                            <label for="opacitySelect">Opacité</label>
+                            <input id="opacitySelect" type="range" min="1" max="10" /> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="column half">
+
+            </div>
+            <div class="column half">
+                                
+                <!--<div id="cImg"> 
+                    <label>Image File</label><br/>
+                    <input type="file" id="imageLoader" name="imageLoader"/>
+                    <canvas id="imageCanvas"></canvas>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- ===================================SCRIPT========================================== -->
+    <script src="assets/lib/jquery.js"></script>
+    <script src="assets/lib/kinetic.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/canvas.js"></script>
+    <script src="assets/js/settings.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/camera.js"></script>
+    <script src="assets/js/domController.js"></script>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '575204695908587',
+                status     : true,
+                xfbml      : true
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/fr_FR/all.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script>app.init();</script>
+</body>
+</html>

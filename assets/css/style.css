@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'stalemate';
+    src:url('../fonts/Stalemate-Regular.ttf') format('truetype');     
+    font-weight: normal; 
+    font-style: normal; 
+}
+@font-face {
+    font-family: 'amaranth';
+    src:url('../fonts/Amaranth-Regular.ttf') format('truetype');     
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+.wrapper550{
+    width: 760px;
+    height:570px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background: url('../img/maquette/bg.png') no-repeat;
+    padding-top: 35px;
+}
+.logo{
+    background: url('../img/maquette/logo.png') no-repeat;
+    background-size: 65%;
+    width: 420px;
+    height: 160px;
+    margin-left: 230px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.logoOn{ 
+    width: 280px;
+    background-size: 70%;
+    margin-left: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.showThumbnailCont{
+    top: -70px;
+    left: 10px;
+    position: relative;
+    opacity: 0;
+}
+
+.showThumbnailContOn{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.showThumbnail{
+    background-image:url(../img/maquette/galerie.png);
+    background-size: 100%;
+    width: 60px;
+    height: 62px;
+    float: left;
+    position: relative;
+    z-index: 1001;
+    cursor: pointer;  
+}
+
+.showThumbnail:active{
+    background-image:url(../img/maquette/galeriehover.png);
+}
+
+.showThumbnailContOn > span {
+    font-family: Georgia;
+    font-style: italic;
+    color: #d4ba0a;
+    font-size: 12px;
+    margin: 0;
+    position: relative;
+    z-index: 1000;
+    left: -70px;
+    top: 47px;
+}
+
+.thumbnailContainer{
+    top: -586px;
+    left: 15px;
+    height: 441px;
+    width: 326px;
+    position: relative;
+    z-index: 1000;
+    background-color: #fff;
+    display: none;
+}
+
+.thumbnailContainerBoard{
+    top: -470px;
+    left: 24px;
+    position: relative;
+    z-index: 998;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.thumbnailContainerBoardOn{
+    opacity: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.thumbnail{
+    display: inline-block;
+    margin:5px;
+    width:95px;    
+    height:95px;
+    cursor: pointer; 
+}
+
+.thumbnailBoard{
+    display: inline-block;
+    margin:5px;
+    width:80px;    
+    height:80px;
+    cursor: pointer; 
+}
+
+.thumbnailContainer > .thumbnail:hover, .thumbnailContainerBoard > .thumbnailBoard:hover{
+    border: 5px solid #d4ba0a;
+}
+
+video{
+    position: absolute;
+    top : 110px;
+    margin-left: 27px;
+    transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+}
+.large{
+    margin-left: 27px;
+    margin-top: -461px;
+    position: absolute;
+    z-index: 666;
+}
+.gerard{
+    background: url('../img/maquette/gerard.png') no-repeat;
+    width: 417px;
+    height: 357px;
+    margin: 4px 0 0 -3px;
+    position: relative;
+    z-index: 999;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.gerardOn{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.msnCam{
+    background:url('../img/maquette/notice.png') no-repeat;
+    width: 309px;
+    height: 219px;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.msnCamOff{
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.paperBoard{
+    background: url('../img/maquette/paperBoard.png') no-repeat;
+    width:327px;
+    height:531px;
+    margin-top :-10px;
+    opacity: 0;
+    text-align: center;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.paperBoardOn{
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.paperBoardOn > span {
+    font-family: Georgia;
+    font-style: italic;
+    color: #d4ba0a;
+    font-size: 16px;
+    margin: 0;
+    position: relative;
+    top: 32px;
+}
+
+#lightbox {
+    position:fixed; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    height:100%; 
+    background:url(../img/maquette/overlay.png) repeat; 
+    text-align:center;
+    z-index: 10000;
+    display:none;
+}
+
+
+#modalContainer{
+    width: 384px;
+    height: 542px;
+    margin: 30px auto;
+    background-image: url(../img/maquette/bloc.png);
+    background-size: 100%;
+}
+#msnShared{
+    font-family: Georgia;
+    font-style: italic;
+    color: #265ca6;
+    font-size: 24px;
+    margin: 0;
+    position: relative;
+    top: 200px;
+}
+
+#pvc{
+    font-family: Georgia;
+    font-style: italic;
+    color: #d4ba0a;
+    margin: 0;
+    font-size: 20px;
+    position: relative;
+    top: 17px;
+}
+#canvas2, #canvas3, #canvas4{
+    display: none;
+}
+
+#canvas5{
+    margin: 30px 60px 7px 0;
+    padding-left: 54px;
+}
+
+
+.snap{
+    background-image: url(../img/maquette/click.png);
+    background-size: 100%;
+    top: -84px;
+    width: 83px;
+    height: 84px;
+    left: 124px;
+    position: relative;
+    z-index: 1100;
+    display: none;
+    cursor: pointer;
+}
+
+.snap:active{
+    background-image: url(../img/maquette/clickHover.png);
+}
+
+.go{
+    background-image: url(../img/maquette/click.png);
+    background-size: 100%;
+    width: 110px;
+    height: 114px;
+    position: relative;
+    z-index: 1100;
+    margin: 50px 0 0 220px;
+    cursor: pointer;
+}
+
+.goOff{
+    opacity: 0;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.go:active{
+    background-image: url(../img/maquette/clickHover.png);
+}
+
+#btnRemake{
+    background-image: url(../img/maquette/button-replay.png);
+    background-position: 0 0;
+    background-size: 100%;
+    width: 75px;
+    height: 74px;
+    display: inline-block;
+    margin-right: -3px;
+    cursor: pointer;
+}
+
+#btnRemake:active{
+    background-image: url(../img/maquette/button-replay-hover.png);  
+}
+
+#btnDownload{
+    background-image: url(../img/maquette/button-download.png);
+    background-size: 100%;
+    width: 75px;
+    height: 74px;
+    display: inline-block;
+    margin-right: -3px;
+    cursor: pointer;
+}
+
+#btnDownload:active{
+    background-image: url(../img/maquette/button-download-hover.png);  
+}
+
+#btnShare{
+    background-image: url(../img/maquette/button-share.png);
+    background-position: 74.5px 0;
+    background-size: 100%;
+    width: 75px;
+    height: 74px;
+    display: inline-block;
+    margin-left: -3px;
+    cursor: pointer;
+}
+
+#btnShare:active{
+    background-image: url(../img/maquette/button-share-hover.png);  
+}
+
+#btnRemakeOnly{
+    background-image: url(../img/maquette/btnRemake.png);
+    background-size: 100%;
+    width: 150px;
+    height: 74px;
+    position: relative;
+    top: 371px;
+    left: 117px;
+    cursor: pointer;
+    display: none;
+}
+
+#btnRemakeOnly:active{
+    background-image: url(../img/maquette/btnRemakeAct.png);  
+}
+
+#cCamera{
+    display: none;
+}
+
+.cCamera{ 
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.cCameraOn{
+    opacity: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.colRightHome{
+    margin-top: 390px;
+}
+.colLeftHome{
+    margin-left: 220px;
+    margin-top: 15px;
+}
+
+.colRightPlay, .colLeftPlay{
+    display: none;
+}
+
+#colorBox{
+    width: 275px;
+    height: 120px;
+    position: relative;
+    z-index: 1100;
+    display: none;
+    background-color: #f38917;
+    padding: 5px 10px;
+    text-align: center;
+    top: -210px;
+    left: 27px;
+    color: #8a1b1b;
+}
+
+#colorBox>input{
+    width: 200px;
+}
+
+#mask{
+    width: 275px;
+    height: 365px;
+    background-color: #937b6c;
+    opacity: 0.7;
+    margin-left: 27px;
+    margin-top: -461px;
+    position: absolute;
+    z-index: 555;
+}
+
+#config{
+    width: 40px;
+    height: 40px;
+    float: right;
+    position: relative;
+    background-image: url(../img/maquette/btnConfig.png);
+    background-size: 100%;
+    top: -208px;
+    left: -28px;
+    z-index: 1101;
+    cursor: pointer;
+}
